@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0a192f, #112240, #1b263b, #243b55);
+        scroll-behavior: smooth;
+        color: white;
+    }
+
+    header {
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    /* Profile Image */
+    .profile-pic {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        box-shadow: 0 0 20px rgba(255,255,255,0.4);
+        margin-bottom: 15px;
+    }
+
+    nav {
+        background: #08121f;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    nav a:hover {
+        color: cyan;
+    }
+
+    section {
+        padding: 50px 20px;
+        max-width: 1000px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(8px);
+        margin-top: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+
+    h2 {
+        color: #66d9ff;
+    }
+
+    footer {
+        background: #08121f;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background: #2c5364;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: teal;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: white;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    input, textarea {
+        padding: 10px;
+        width: 80%;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255,255,255,0.1);
+        color: white;
+    }
+
+    iframe {
+        border: none;
+        border-radius: 10px;
+    }
+
+    .linkedin-box {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(255,255,255,0.08);
+        border-radius: 10px;
+    }
+
+    .linkedin-box a {
+        color: #66d9ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .linkedin-box a:hover {
+        color: cyan;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- Add your image file name here -->
+    <img src="yogesh.jpeg" alt="Yogesh Profile" class="profile-pic">
+
+    <h1>Yogesh Dhanvani</h1>
+    <p>Chemical Engineering Student | Developer | Innovator</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#marks">Marks</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate Chemical Engineering student interested in technology and innovation.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <label>HTML</label>
+    <progress value="85" max="100"></progress><br><br>
+
+    <label>C Programming</label>
+    <progress value="75" max="100"></progress><br><br>
+
+    <label>Problem Solving</label>
+    <meter value="0.8"></meter>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <table>
+        <tr>
+            <th>Project</th>
+            <th>Technology</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>Portfolio Website</td>
+            <td>HTML, CSS</td>
+            <td>2026</td>
+        </tr>
+        <tr>
+            <td>Engineering Calculator</td>
+            <td>C Programming</td>
+            <td>2025</td>
+        </tr>
+    </table>
+</section>
+
+<section id="marks">
+    <h2>Academic Marks</h2>
+
+    <table>
+        <tr>
+            <th>Exam</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>10th Percentage</td>
+            <td>93.28%</td>
+        </tr>
+        <tr>
+            <td>12th Percentage</td>
+            <td>70%</td>
+        </tr>
+        <tr>
+            <td>MHTCET Percentile</td>
+            <td>91</td>
+        </tr>
+    </table>
+</section>
+
+<section id="media">
+    <h2>Media</h2>
+    <iframe src="https://www.wikipedia.org" width="100%" height="200"></iframe>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="saveName(event)">
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Email" required><br><br>
+        <textarea placeholder="Your Message"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <div class="linkedin-box">
+        <h3>LinkedIn Profile</h3>
+        <p><strong>Name:</strong> Yogesh Dhanwani</p>
+        <p>
+            <a href="https://www.linkedin.com/in/yogesh-dhanwani-2701b2407" target="_blank">
+                Visit My LinkedIn
+            </a>
+        </p>
+    </div>
+
+    <br>
+    <button onclick="downloadResume()">Download Resume</button>
+</section>
+
+<footer>
+    <p>© 2026 Yogesh Dhanvani | All Rights Reserved</p>
+</footer>
+
+<script>
+function saveName(event) {
+    event.preventDefault();
+    alert("Form Submitted!");
+}
+
+function downloadResume() {
+    alert("Resume Download Coming Soon!");
+}
+</script>
+
+</body>
+</html>
